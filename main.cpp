@@ -97,7 +97,9 @@ static const char* WALL_NAMES[WALL_COUNT] = {
 
 /* ── Pixel emitter ──────────────────────────────────────────────────────── */
 static void draw_pixel(int x, int y) {
-    glBegin(GL_POINTS); glVertex2i(x,y); glEnd();
+   glBegin(GL_POINTS); 
+   glVertex2i(x,y); 
+   glEnd();
 }
 
 /* ══════════════════════════════════════════════════
