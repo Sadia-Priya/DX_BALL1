@@ -191,7 +191,7 @@ static void scanline_fill_polygon(IVec2* pts, int n) {
                 xs[nx++]=x0+t*(x1-x0);
             }
         }
-        /* bubble sort (n çok küçük) */
+        /* bubble sort  */
         for(i=0;i<nx-1;i++) for(k=0;k<nx-1-i;k++)
             if(xs[k]>xs[k+1]){ float tmp=xs[k]; xs[k]=xs[k+1]; xs[k+1]=tmp; }
         for(k=0;k+1<nx;k+=2)
